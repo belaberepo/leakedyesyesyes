@@ -1,0 +1,659 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SYNSTRESSER - DDOS PANEL</title>
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- simplebar CSS-->
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet">
+    <!-- Bootstrap core CSS-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- animate CSS-->
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
+    <!-- Icons CSS-->
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <!-- Sidebar CSS-->
+    <link href="assets/css/sidebar-menu.css" rel="stylesheet">
+    <!-- Custom Style-->
+    <link href="assets/css/app-style.css" rel="stylesheet">
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 13px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #343a30;
+  cursor: pointer;
+}
+
+</style>
+  </head>
+
+
+  <!--<div class="modal fade" id="layer7">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Layer 7 Attack</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <form method=POST action=includes/attackl7.php>
+
+                             <div class="form-group">
+                               <label for="target">TARGET</label>
+                               <input type="text" class="form-control" name=target id="target" placeholder="https://google.com">
+                             </div>
+                             <div class="form-group">
+                               <label for="input-2">TIME</label>
+                               <input type="number" class="form-control" name=time id="time" placeholder="600">
+                             </div>
+
+  				<div class="form-group">
+  				  <label for="method">METHOD</label>
+  					<select name=method class="form-control" id="basic-select">
+                                                    </select>
+  				</div>
+          <br>
+    <div>
+        <center><p>Attack servers: <span style="font-size:15px" class="badge badge-light"><span id="con">1</span></span></p></center>
+        <input name=servers type="range" min="1" max="10" value="1" oninput="corange();" class="slider" id="coRange">
+    </div>
+                             <br>
+                             <div class="form-group">
+                              <center><input type=submit class="btn btn-light px-5" value=ATTACK></center>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+
+<div class="modal fade" id="layer7">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Layer 7 Engine</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <form method=POST action=includes/attackengine.php>
+
+                             <div class="form-group">
+                               <label for="target">TARGET</label>
+                               <input type="text" class="form-control" name=fagfag placeholder="https://google.com">
+                             </div>
+                             <div class="form-group">
+                               <label for="time">TIME</label>
+                               <input type="number" class="form-control" name=time id="time" placeholder="600">
+                             </div>
+  				<div class="form-group">
+  				  <label for="method">METHOD</label>
+  					<select name=method class="form-control" id="basic-select">
+              <option value=GET>GET</option>
+              <option value=POST>POST</option>
+                          </select>
+  				</div>
+                             <div class="form-group">
+                               <label for="postdata">POST DATA</label>
+                               <input type="text" class="form-control" name=postdata id="postdata" placeholder="username=test&password=test (ONLY FOR POST!)">
+                             </div>
+                             <div class="form-group">
+                               <label for="ref">REFERER</label>
+                               <input type="text" class="form-control" name=ref id="ref" placeholder="https://google.com (OPTIONAL)">
+                             </div>
+  				<div class="form-group">
+  				  <label for="ratelimit">RATELIMIT</label>
+  					<select name=ratelimit class="form-control" id="basic-select">
+              <option value=false>Default</option>
+              <option value=true>Bypass</option>
+                          </select>
+  				</div>
+  				<div class="form-group">
+  				  <label for="mode">MODE</label>
+  					<select name=mode class="form-control" id="basic-select">
+              <option value=REQUEST>HTTP</option>
+              <option value=PROXY>Socket</option>
+                          </select>
+  				</div>
+ 				<div class="form-group">
+  				  <label for="origin">ATTACK ORIGIN</label>
+  					<select name=origin class="form-control" id="basic-select">
+              <option value=ALL>Default</option>
+              <option value=Brazil>Brazil</option>
+              <option value=China>China</option>
+              <option value=HongKong>Hong Kong</option>
+              <option value=Korea>Korea</option>
+              <option value=Russia>Russia</option>
+              <option value=UK>United Kingdom</option>
+              <option value=US>United States</option>
+              <option value=Vietnam>Vietnam</option>
+              <option value=India>India</option>
+              <option value=Indonesia>Indonesia</option>
+              <option value=Turkey>Turkey</option>
+              <option value=Italy>Italy</option>
+              <option value=Japan>Japan</option>
+              <option value=Spain>Spain</option>
+              <option value=Taiwan>Taiwan</option>
+              <option value=Germany>Germany</option>
+              <option value=France>France</option>
+              <option value=Thailand>Thailand</option>
+              <option value=Iran>Iran</option>
+              <option value=Canada>Canada</option>
+              <option value=Bulgaria>Bulgaria</option>
+	      <option value=Singapore>Singapore</option>
+		<option value=Poland>Poland</option>
+		<option value=Ukraine>Ukraine</option>
+                          </select>
+  				</div>
+                             <br>
+                             <div class="form-group">
+                              <center><input type=submit class="btn btn-light px-5" value=ATTACK></center>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+  <div class="modal fade" id="layer4">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Layer 4 Attack</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <form method=POST action=includes/attackl4.php>
+                             <div class="form-group">
+                               <label for="target">TARGET</label>
+                               <input type="text" class="form-control" name=target id="target" placeholder="192.168.0.1">
+                             </div>
+                             <div class="form-group">
+                               <label for="time">TIME</label>
+                               <input type="number" class="form-control" name=time id="time" placeholder="600">
+                             </div>
+                             <div class="form-group">
+                               <label for="port">PORT</label>
+                               <input type="number" class="form-control" name=port id="port" placeholder="443">
+                             </div>
+  				<div class="form-group">
+            <label for="method">METHOD</label>
+            <select name=method class="form-control" id="basic-select">
+                          <option value=DNS>UDP-DNS</option><option value=WSD>UDP-WSD</option><option value=ARD>UDP-ARD</option><option value=NTP>UDP-NTP</option><option value=LDAP>UDP-LDAP</option><option value=SNMP>UDP-SNMP</option><option value=RAWUDP>UDP-RAW</option><option value=BYPASS>UDP-NEW</option><option value=SENTINEL>UDP-SENTINEL</option><option value=CHARGEN>UDP-CHARGEN</option><option value=GRENADE>UDP-GRENADE</option><option value=MIXAMP>[BEST] UDP-MIXAMP</option><option value=GRE>GRE</option><option value=SSYN>TCP-SSYN</option><option value=TCPVOX>TCP-VOX</option><option value=TCPRAND>TCP-RAND</option><option value=TCPHYPERION>TCP-HYP</option><option value=EXENIUM>EXENIUM</option><option value=UDPBYPASS>[INSANE] UDP-BYPASS</option><option value=TCPBYPASS>[INSANE] TCP-BYPASS</option>                          </select>
+  				</div>
+          
+                             <br>
+                             <div class="form-group">
+                              <center><button type="submit" class="btn btn-light px-5"><i class="icon-energy"></i> Attack</button></center>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+           
+
+
+<body style="background: #292929">
+
+<!-- Start wrapper-->
+ <div id="wrapper">
+
+
+ <!--Start sidebar-wrapper-->
+   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+     <div class="brand-logo">
+      <a href="#">
+
+       <h5 class="logo-text"><img src=assets/images/logo.png width="100%" height="auto" alt=logo></h5>
+     </a>
+   </div>
+      <br>
+   <ul class="sidebar-menu do-nicescrol">
+        <li>
+        <a href="dashboard" class="waves-effect">
+          <i class="fa fa-th-large"></i> <span>Dashboard</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="purchase" class="waves-effect">
+          <i class="fa fa-shopping-cart"></i> <span>Purchase</span>
+        </a>
+   </li>
+
+           
+
+    </ul>
+   <ul class="sidebar-menu do-nicescrol">
+      <li>
+        <a href="attack" class="waves-effect">
+          <i class="fa fa-wifi"></i> <span>DDOS Panel</span>
+        </a>
+      </li>
+    </ul>
+   <!--<ul class="sidebar-menu do-nicescrol">
+      <li>
+        <a href="engine" class="waves-effect">
+          <i class="fa fa-rocket"></i> <span>Engine Panel</span>
+        </a>
+      </li>
+    </ul>-->
+    </ul>
+   <ul class="sidebar-menu do-nicescrol">
+      <li>
+        <a href="javaScript:void();" class="waves-effect">
+          <i class="fa fa-envelope-o"></i> <span>Support</span>
+        </a>
+    <ul class="sidebar-submenu">
+<li><a href="api"><i style="margin-top:10px" class="zmdi zmdi-long-arrow-right"></i> API</a></li>
+<li><a href="faq"><i class="zmdi zmdi-long-arrow-right"></i> FAQ</a></li>
+    </ul>
+      </li>
+    </ul>
+
+
+    <ul class="sidebar-menu do-nicescrol">
+
+
+            <li>
+        <a href="showoff" class="waves-effect">
+          <i class="fa fa-bomb"></i> <span>Showoff</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+
+
+      <li>
+        <a href="https://t.me/synstresserofficial" target=_blank class="waves-effect">
+          <i class="fa fa-telegram"></i> <span>Telegram</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+    </ul>
+    
+       </div>
+   <!--End sidebar-wrapper-->
+
+   <!--
+
+   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+     <div class="brand-logo">
+      <a href="index.html">
+
+       <h5 class="logo-text"><b>STRESSER.CC</b></h5>
+     </a>
+   </div>
+      <br>
+   <ul class="sidebar-menu do-nicescrol">
+      <li class="sidebar-header">USER HUB</li>
+        <li>
+        <a href="dashboard.php" class="waves-effect">
+          <i class="fa fa-th-large"></i> <span>Dashboard</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="packages.php" class="waves-effect">
+          <i class="fa fa-shopping-cart"></i> <span>Packages</span>
+        </a>
+   </li>
+
+           
+
+    </ul>
+   <ul class="sidebar-menu do-nicescrol">
+      <li>
+        <a href="attack.php" class="waves-effect">
+          <i class="fa fa-wifi"></i> <span>DDOS Panel</span>
+        </a>
+      </li>
+    </ul>
+
+   <ul class="sidebar-menu do-nicescrol">
+      <li>
+        <a href="api.php" class="waves-effect">
+          <i class="fa fa-code"></i> <span>API Manager</span>
+        </a>
+</li></ul>
+
+
+    <ul class="sidebar-menu do-nicescrol">
+      <li class="sidebar-header">EXTRA</li>
+
+      <li>
+        <a href="support.php" class="waves-effect">
+          <i class="fa fa-envelope-o"></i> <span>Support</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+            <li>
+        <a href="showoff.php" class="waves-effect">
+          <i class="fa fa-bomb"></i> <span>Showoff</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+
+
+      <li>
+        <a href="https://t.me/synstresserofficial" target=_blank class="waves-effect">
+          <i class="fa fa-telegram"></i> <span>Telegram</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+    </ul>
+    
+       </div>
+
+ -->
+
+<!--Start topbar header-->
+<header class="topbar-nav">
+ <nav class="navbar navbar-expand fixed-top">
+  <ul class="navbar-nav mr-auto align-items-center">
+    <li class="nav-item">
+      <a class="nav-link toggle-menu" href="javascript:void();">
+       <i class="icon-menu menu-icon"></i>
+     </a>
+    </li>
+  </ul>
+     
+  <ul class="navbar-nav align-items-center right-nav-link">
+    <li class="nav-item">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href=logout.php>
+        <span class="user-profile"><i class="icon-power mr-2"></i></span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</header>
+<!--End topbar header-->
+
+
+
+
+  <div class="clearfix"></div>
+  	
+    <div class="content-wrapper">
+      <div class="container-fluid">
+   
+<center>  
+      <div class="col-lg-5">
+  </div> 
+</center> 
+
+	  <div class="row">
+		<div class="col-lg-6">
+		<div class="card">
+		 <div class="card-header text-uppercase">Layer 4 (IPv4)</div>
+		  <div class="card-body">
+
+			  <center><button type="button" data-toggle="modal" data-target="#layer4" style="background-color:#14ABEF" class="btn waves-effect waves-light m-1">START ATTACK</button></center>
+
+		  </div>
+		</div>
+	   </div>
+	   <div class="col-lg-6">
+		<div class="card">
+		 <div class="card-header text-uppercase">Layer 7 (WEB)</div>
+		  <div class="card-body">
+
+			  <center><button type="button"  data-toggle="modal" data-target="#layer7" style="background-color:#14ABEF" class="btn waves-effect waves-light m-1">START ATTACK</button></center>
+		  </div>
+		</div>
+	   </div>
+	  </div><!--End Row-->
+         <br>
+  
+<style type="text/css">
+  
+
+.myButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #14ABEF;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #14ABEF;
+  box-shadow:inset 0px 1px 0px 0px ##14ABEF;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #14ABEF), color-stop(1, #14ABEF));
+  background:-moz-linear-gradient(top, #14ABEF 5%, #14ABEF 100%);
+  background:-webkit-linear-gradient(top, #14ABEF 5%, #14ABEF 100%);
+  background:-o-linear-gradient(top, #14ABEF 5%, #14ABEF 100%);
+  background:-ms-linear-gradient(top, #14ABEF 5%, #14ABEF 100%);
+  background:linear-gradient(to bottom, #14ABEF 5%, #14ABEF 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#14ABEF', endColorstr='#14ABEF',GradientType=0);
+  background-color:#14ABEF;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  border:1px solid #14ABEF;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:10px;
+  padding:4px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #14ABEF;
+}
+.myButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #14ABEF), color-stop(1, #14ABEF));
+  background:-moz-linear-gradient(top, #14ABEF 5%, #14ABEF 100%);
+  background:-webkit-linear-gradient(top, #14ABEF 5%, #14ABEF 100%);
+  background:-o-linear-gradient(top, #14ABEF 5%, #14ABEF 100%);
+  background:-ms-linear-gradient(top, #14ABEF 5%, #14ABEF 100%);
+  background:linear-gradient(to bottom, #14ABEF 5%, #14ABEF 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#14ABEF', endColorstr='#14ABEF',GradientType=0);
+  background-color:#14ABEF;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+
+</style>
+
+ <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header text-uppercase">RUNNING ATTACKS</div>
+             <div class="card-body">
+               <div class="table-responsive">
+                <table class="table table-striped table-bordered notranslate">
+                  <tbody><tr>
+                    <th style=""><center>Network</center></th>
+                    <th style=""><center>Target</center></th>
+                    <th style=""><center>Method</center></th>
+                    <th style=""><center>Expiration</center></th>
+                    <th style=""><center>Action</center></th>
+                  </tr>
+
+            <tr>
+                    <td><center>None</center></td>
+                    <td><center>None</center></td>
+                    <td><center>None</center></td>
+                    <td><center>None</center></td>
+                    <td><center>None</center></td>
+                  </tr>                  </tr>
+                </tbody></table>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div><!--End Row-->  
+
+
+
+  <br>
+
+  <dir class="text-align:center">
+    
+    <h5>Attack FAQ & Comprehensive guide</h5>
+    <br>
+    <h6>Average power per concurrent:</h6>
+    <p>The average power per attack of the regular network its 80-120k rqps and 10-30 Gbps (1M pps). Premium network its 100% more, and enterprise 300% more.</p>
+    <br>
+    <h6>Layer 7 bypasses:</h6>
+    <p>Bypasses are included in all plans, in order to get the best effect for them use HTTP mode (more info later) all bypasses will be listed in the guide.</p>
+    <br>
+    <h6>Layer 4 bypasses:</h6>
+    <p>Bypasses are included in all plans, in order to get the best effect for them use them on an open TCP or UDP port respectively for UDP/TCP Bypass.</p>
+    <br>
+    <hr>
+    <b>Layer 7 bypass list - Protections we officially bypass / synstresser.to users have downed.</b>
+    <ul>
+      <li>Cloudflare (free to enterprise)</li>
+      <li>Cloudflare UAM (Under attack mode)</li>
+      <li>Cloudflare reCaptcha (Challenge)</li>
+      <li>Blazingfast JS</li>
+      <li>Sucuri JS challenge</li>
+      <li>Stormwall JS</li>
+      <li>DDoS-Guard JS</li>
+      <li>Akamai</li>
+      <li>Fastly</li>
+      <li>Variti</li>
+      <li>Serverius</li>
+      <li>KOddos</li>
+      <li>HyperFilter</li>
+      <li>Virtual Systems</li>
+      <li>Amazon Cloudfront</li>
+      <li>Imperva Incapsula</li>
+    </ul>
+    <br>
+      <b>Layer 4 bypass list - Protections we officially bypass / synstresser.to users have downed.</b>
+    <ul>
+      <li>Amazon (Fortnite etc)</li>
+      <li>Microsoft Azure</li>
+      <li>Rainbow 6 siege</li>
+      <li>FiveM servers (All hosts)</li>
+      <li>NFO servers</li>
+      <li>Hetzner</li>
+      <li>Digital Ocean</li>
+      <li>Some PUBG</li>
+      <li>Some Ark</li>
+      <li>Some Runescape</li>
+      <li>Serverius</li>
+      <li>Alibaba</li>
+      <li>HK Cloud</li>
+      <li>Some Worldstream</li>
+      <li>Some OVH</li>
+      <li>Maxihost</li>
+    </ul>
+  </dir>
+  <hr>
+  <h5>Layer 7 panel breakdown</h5>
+  <br>
+    <h6>Method GET / POST:</h6>
+    <p>GET is used to request content from an page while POST its used to submit it, the best application for GET its to attack static websites or simple search forms, while POST its good for login, register or other kind of forms, in combination with POST DATA it can be really deadly. Always use POST with the proper POST DATA if possible. But dont underestimate GET.</p>
+    <br>
+    <h6>Referer:</h6>
+    <p>HTTP referers indicate where the request its coming from, usually search engines or social media, this can help make your requests seem more legit, indicating they come from real websites can make them look like real traffic and even bypass refer-based protections.</p>
+    <br>
+    <h6>Ratelimit:</h6>
+    <p>Ratelimit is a way to mitigate attacks based on the amount of requests each visitor does, turning on ratelimit bypass with HTTP mode will attempt to detect the at what rate the website is banning IPs and send requests at a lower rate to bypass this protection. Only use bypass option if your website has this kind of protection.</p>
+    <br>
+    <h6>HTTP Mode:</h6>
+    <p>HTTP mode sends the attack requests from a headless browser to emulate a real visitor. This attack its really powerful in combination with POST data, it can take down a lot of websites without needing a lot of requests per second as its very hard to mitigate and can bypass a lot of protections.</p>
+    <br>
+    <h6>Socket Mode:</h6>
+    <p>Socket mode its the more classic http flood style sending a lot of requests per second spamming tcp connections with the target, useful for powerful GET floods and for targets without ratelimit / js challenges.</p>
+    <br>
+    <h6>Attack origin:</h6>
+    <p>Attack origin allows you to choose where the attack will come from, the default uses all countries, and you can change it to an specific country. This is useful to bypass geo lock protections, for websites that only accept visitors from an specific country. Only use this if this is the case, if your website doesnt require this leave it to default.</p>
+    <br>
+    <h6>Note:</h6>
+    <p>These settings can make your attack really powerful and help you to down almost any website, how ever, if they are used incorrectly they can render your attack useless. Only use the settings you understand. How and when matters a lot. If you do not understand or know when to use these settings, dont use them.<a href=https://developer.mozilla.org/en-US/docs/Web/HTTP target=_blank>Learn more about how HTTP works here</a>.</p>
+    <br>
+  <hr>
+  <h5>Layer 4 methods breakdown</h5>
+  <br>
+    <h6>TCP methods:</h6>
+    <p>TCP methods are mostly useful when its needed to attack an application working over tcp, such as http and some games, since tcp attacks are fairly easy to mitigate our method TCP bypass its one of the most useful for this purpose as it can emulate real tcp connections and bypass almost any firewall, how ever its only useful if you use it against the specific TCP port which the application is running on.</p>
+    <br>
+    <h6>UDP methods:</h6>
+    <p>UDP methods are mostly useful against game servers as almost all games work over udp, for these type of applications UDP bypass method its recommended, always try to attack the port on where the application its running on, you can find this information online.</p>
+    <br>
+    <h6>UDP amplifications:</h6>
+    <p>UDP amplification methods are the equivalent of blunt force in ddos, they will send large packets and a lot of traffic, and can collapse some servers without high bandwidth and mitigation capacity, port doesnt really matter, but its always best to use an open udp port.</p>
+    <br>
+    <a href=https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers target=_blank>More information about PORTS (common ports)</a><br>
+    <a href=https://www.us-cert.gov/ncas/alerts/TA14-017A target=_blank>More information about UDP amplifications</a>
+    <hr>
+    <h5>Additional information</h5>
+    <br>
+    <h6>About TOR:</h6>
+    <p>Our Layer 7 panel can attack .onion websites using the TOR network, just enter the url and launch the attack, you will see the website down in a minute.</p>
+    <br>
+    <h6>About OVH:</h6>
+    <p>OVH has a really efficient system, once an attack its detected, the affected server goes into "VAC" which means it is absorbed into ovh ddos protection and grants it a filtering capacity of up to 2 tbps, this is why we often say downing ovh its not possible. How ever, some OVHs, mostly the small dedicated servers or vps, or ovh hosting and not game servers can sometimes be downed by new unfiltered methods or methods that dont trigger VAC. Please avoid asking about downing OVH via l4, if a stresser claims they down OVH, there is a 90% chance its false and its a scam.</p>
+    <br>
+      </div>
+      <!-- End container-fluid-->
+     </div><!--End content-wrapper-->
+  
+  	
+    </div><!--End wrapper-->
+    
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  	
+    <!-- simplebar js -->
+    <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+    <!-- sidebar-menu js -->
+    <script src="assets/js/sidebar-menu.js"></script>
+    
+    <!-- Custom scripts -->
+    <script src="assets/js/app-script.js"></script>
+
+    <!-- Chart js -->
+    <script src="assets/plugins/Chart.js/Chart.min.js"></script>
+    <!-- Index2 js -->
+    <script src="assets/js/index2.js"></script>
+  </body>
+  </html>
+
+
+
+

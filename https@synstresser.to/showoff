@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SYNSTRESSER - POWERPROOF</title>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet">
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+  <!-- Sidebar CSS-->
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet">
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet">
+
+</head>
+
+
+
+         
+
+
+<body style="background: #292929">
+
+<!-- Start wrapper-->
+ <div id="wrapper">
+
+
+ <!--Start sidebar-wrapper-->
+   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+     <div class="brand-logo">
+      <a href="#">
+
+       <h5 class="logo-text"><img src=assets/images/logo.png width="100%" height="auto" alt=logo></h5>
+     </a>
+   </div>
+      <br>
+   <ul class="sidebar-menu do-nicescrol">
+        <li>
+        <a href="dashboard" class="waves-effect">
+          <i class="fa fa-th-large"></i> <span>Dashboard</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="purchase" class="waves-effect">
+          <i class="fa fa-shopping-cart"></i> <span>Purchase</span>
+        </a>
+   </li>
+
+           
+
+    </ul>
+   <ul class="sidebar-menu do-nicescrol">
+      <li>
+        <a href="attack" class="waves-effect">
+          <i class="fa fa-wifi"></i> <span>DDOS Panel</span>
+        </a>
+      </li>
+    </ul>
+   <!--<ul class="sidebar-menu do-nicescrol">
+      <li>
+        <a href="engine" class="waves-effect">
+          <i class="fa fa-rocket"></i> <span>Engine Panel</span>
+        </a>
+      </li>
+    </ul>-->
+    </ul>
+   <ul class="sidebar-menu do-nicescrol">
+      <li>
+        <a href="javaScript:void();" class="waves-effect">
+          <i class="fa fa-envelope-o"></i> <span>Support</span>
+        </a>
+    <ul class="sidebar-submenu">
+<li><a href="api"><i style="margin-top:10px" class="zmdi zmdi-long-arrow-right"></i> API</a></li>
+<li><a href="faq"><i class="zmdi zmdi-long-arrow-right"></i> FAQ</a></li>
+    </ul>
+      </li>
+    </ul>
+
+
+    <ul class="sidebar-menu do-nicescrol">
+
+
+            <li>
+        <a href="showoff" class="waves-effect">
+          <i class="fa fa-bomb"></i> <span>Showoff</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+
+
+      <li>
+        <a href="https://t.me/synstresserofficial" target=_blank class="waves-effect">
+          <i class="fa fa-telegram"></i> <span>Telegram</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+    </ul>
+    
+       </div>
+   <!--End sidebar-wrapper-->
+
+   <!--
+
+   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+     <div class="brand-logo">
+      <a href="index.html">
+
+       <h5 class="logo-text"><b>STRESSER.CC</b></h5>
+     </a>
+   </div>
+      <br>
+   <ul class="sidebar-menu do-nicescrol">
+      <li class="sidebar-header">USER HUB</li>
+        <li>
+        <a href="dashboard.php" class="waves-effect">
+          <i class="fa fa-th-large"></i> <span>Dashboard</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="packages.php" class="waves-effect">
+          <i class="fa fa-shopping-cart"></i> <span>Packages</span>
+        </a>
+   </li>
+
+           
+
+    </ul>
+   <ul class="sidebar-menu do-nicescrol">
+      <li>
+        <a href="attack.php" class="waves-effect">
+          <i class="fa fa-wifi"></i> <span>DDOS Panel</span>
+        </a>
+      </li>
+    </ul>
+
+   <ul class="sidebar-menu do-nicescrol">
+      <li>
+        <a href="api.php" class="waves-effect">
+          <i class="fa fa-code"></i> <span>API Manager</span>
+        </a>
+</li></ul>
+
+
+    <ul class="sidebar-menu do-nicescrol">
+      <li class="sidebar-header">EXTRA</li>
+
+      <li>
+        <a href="support.php" class="waves-effect">
+          <i class="fa fa-envelope-o"></i> <span>Support</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+            <li>
+        <a href="showoff.php" class="waves-effect">
+          <i class="fa fa-bomb"></i> <span>Showoff</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+
+
+      <li>
+        <a href="https://t.me/synstresserofficial" target=_blank class="waves-effect">
+          <i class="fa fa-telegram"></i> <span>Telegram</span><i class="fa pull-right"></i>
+        </a>
+      </li>
+    </ul>
+    
+       </div>
+
+ -->
+
+<!--Start topbar header-->
+<header class="topbar-nav">
+ <nav class="navbar navbar-expand fixed-top">
+  <ul class="navbar-nav mr-auto align-items-center">
+    <li class="nav-item">
+      <a class="nav-link toggle-menu" href="javascript:void();">
+       <i class="icon-menu menu-icon"></i>
+     </a>
+    </li>
+  </ul>
+     
+  <ul class="navbar-nav align-items-center right-nav-link">
+    <li class="nav-item">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href=logout.php>
+        <span class="user-profile"><i class="icon-power mr-2"></i></span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</header>
+<!--End topbar header-->
+
+
+
+
+<div class="clearfix"></div>
+	
+  <div class="content-wrapper">
+    <div class="container-fluid">
+
+<div style="text-align:center" class="row">
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=6naFV90FaU8" controls="controls" />                             
+<h4>SYNSTRESSER.TO vs STEAM STORE</h4>
+</div>
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=mPU0-laGR4o" controls="controls" />                             
+<h4>SYNSTRESSER.TO vs SUCURI WAF</h4>
+</div>
+</div>
+
+<br><br>
+
+<div style="text-align:center" class="row">
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=sQHHJ1cDw3A" controls="controls" />                             
+<h4>SYNSTRESSER.TO AKAMAI BYPASS</h4>
+</div>
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=mqJKryPlu2g" controls="controls" />                             
+<h4>SYNSTRESSER.TO vs DDOS-GUARD PREMIUM</h4>
+</div>
+</div>
+
+<br><br>
+<div style="text-align:center" class="row">
+<div class="col-lg-6">
+<img width="520" height="315"
+src="https://imgur.com/l02scJJ.png">
+<h4>SYNSTRESSER.TO vs FLUXCDN</h4>
+</div>
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=fkjSnjrNoe0" controls="controls" />                             
+<h4>SYNSTRESSER.TO vs AMAZON LAYER 4</h4>
+</div>
+</div>
+
+<br><br>
+<div style="text-align:center" class="row">
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=uy4bvTEZaTA" controls="controls" />                             
+<h4>SYNSTRESSER.TO vs NULLED.TO</h4>
+</div>
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=Sd3250IH_6A" controls="controls" />                             
+<h4>SYNSTRESSER.TO vs CAPTCHA</h4>
+</div>
+</div>
+
+<br><br>
+
+<div style="text-align:center" class="row">
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=8BgNKRcs7RQ" controls="controls" />                             
+<h4>SYNSTRESSER.TO vs AMAZON (TCP-BYPASS)</h4>
+</div>
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=qybINttAiKE" controls="controls" />                             
+<h4>SYNSTRESSER.TO vs CLOUDFLARE UAM</h4>
+</div>
+</div>
+
+<br><br>
+
+<div style="text-align:center" class="row">
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=58cs5hk82YI" controls="controls" />                             
+<h4>SYNSTRESSER.TO vs BLAZINGFAST</h4>
+</div>
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=vuuLJQKHkMQ" controls="controls" />                             
+<h4>SYNSTRESSER.TO vs MCHOST</h4>
+</div>
+</div>
+
+<br><br>
+<!--
+<div style="text-align:center" class="row">
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=09bUqMtFDeg" controls="controls" />                             
+<h4>CyberDDOS Bypass - MULTIBYPASS</h4>
+</div>
+<div class="col-lg-6">
+<video src="http://www.youtube.com/watch?v=jLeVsRW2Xqk" controls="controls" />                             
+<h4>Blazingfast Bypass - MULTIBYPASS</h4>
+</div>
+</div>-->
+
+<br><br>
+
+
+    </div>
+    <!-- End container-fluid-->
+   </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+
+	
+  </div><!--End wrapper-->
+  
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+	
+  <!-- simplebar js -->
+  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+  <!-- sidebar-menu js -->
+  <script src="assets/js/sidebar-menu.js"></script>
+  
+  <!-- Custom scripts -->
+  <script src="assets/js/app-script.js"></script>
+
+  <!-- Chart js -->
+  <script src="assets/plugins/Chart.js/Chart.min.js"></script>
+  <!-- Index2 js -->
+  <script src="assets/js/index2.js"></script>
+
+</body>
+</html>
+
+
+
